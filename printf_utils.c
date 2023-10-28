@@ -6,7 +6,7 @@
 /*   By: marboccu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 14:57:28 by marboccu          #+#    #+#             */
-/*   Updated: 2023/10/27 18:26:53 by marboccu         ###   ########.fr       */
+/*   Updated: 2023/10/28 01:14:56 by marboccu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,6 +130,6 @@ int ft_puthexa(uintptr_t ptr, int num)
         i += ft_puthexa(ptr % 16, 1);
     }
     else
-        i += ft_putchar(base[num]);
+        i += ft_putchar(base[ptr]);
     return (i);
 }
