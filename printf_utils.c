@@ -6,7 +6,7 @@
 /*   By: marboccu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 14:57:28 by marboccu          #+#    #+#             */
-/*   Updated: 2023/10/28 01:14:56 by marboccu         ###   ########.fr       */
+/*   Updated: 2023/10/28 16:14:38 by marboccu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int ft_putstr(char *str)
     int i;
 
     i = 0;
+    if (!str)
+        return (ft_putstr("(null)"));
     while (str[i])
     {
         ft_putchar(str[i]);
@@ -38,9 +40,7 @@ int ft_putnbr(int nb)
     i = 0;
     if (nb == -2147483648)
     {
-        ft_putchar('-');
-        ft_putchar('2');
-        nb = 147483648;
+        return (ft_putstr("-2147483648"));
     }
     if (nb < 0)
     {
@@ -122,6 +122,8 @@ int ft_puthexa(uintptr_t ptr, int num)
     base = "0123456789abcdef";
     i = 0;
 
+    if (!ptr && !num)
+        return (ft_putstr("(nil)"));
     if (!num)
         i += ft_putstr("0x");
     if (ptr >= 16)

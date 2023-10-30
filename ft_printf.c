@@ -6,7 +6,7 @@
 /*   By: marboccu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 12:27:39 by marboccu          #+#    #+#             */
-/*   Updated: 2023/10/27 18:22:04 by marboccu         ###   ########.fr       */
+/*   Updated: 2023/10/30 19:03:29 by marboccu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,14 +57,15 @@ int ft_printf(const char *format, ...)
     va_end(params);
     return (print);
 }
-int main()
-{
-    void *ptr;
 
-    int x = 42;
-    ptr = &x;
+// int main()
+// {
+//     void *ptr;
 
-    ft_printf("Hello %p ciao\n", ptr);
-    printf("Hello %p ciao\n", ptr);
-    return (0);
-}
+//     int x = 42;
+//     ptr = &x;
+
+//     ft_printf("Hello %p ciao\n", ptr);
+//     printf("Hello %p ciao\n", ptr);
+//     return (0);
+// }
