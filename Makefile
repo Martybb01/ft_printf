@@ -8,6 +8,7 @@ CFLAGS = -Wall -Wextra -Werror
 SRCS = ft_printf.c \
 printf_utils.c \
 printf_utils2.c \
+main.c
 
 OBJS := $(SRCS:.c=.o)
 
